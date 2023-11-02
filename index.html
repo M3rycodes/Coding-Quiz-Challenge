@@ -3,47 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet"  type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet"  href="./js/script.js">
 </head>
 
 <body>
+    <! -- High Scores Link -- >
         <div id="high-scores">
             <a href="highscores.html"> View High Scores</a>
         </div>
 
+
+    <!-Timer -- >
         <div class ="timer">
-            Timer: <span id="time">60</span></div>
+            Timer: <span id="time">60</span>
+        </div>
     
+    <! Main Content Wrapper -- >    
     <div class = " wrapper">
+        <! -- Start Screen -- >
         <div id="start-screen" class="start">
             <h1> JavaScript Coding Quiz</h1>
             <p>
              Answer as many questions as you can within the time frame,<br>
              if incorrect your score/time will be deducted by 15 seconds!
             </p>
-            
             <button id="start-btn" class="start">Start Quiz</button>
         </div>
 
+        <! -- Questions Screen(Initially Hidden) -- >
         <div id="questions" class="hide">
-            <h2 id="question-title"></h2>
+            <p id="question-title"></p>
             <div id="choices" class="choices"></div>
         </div>
 
+        <! -- End Screen(Initially Hidden) -- >
         <div id="end-screen" class="hide">
             <h2>Quiz Complete!</h2>
-            <p>Your final score is <span id="final-score"></span> </p>
+            <p>Your final score is: <span id="final-score"></span> </p>
             <p>
             Enter initials: <input type="text" id="initials" maxlength="3" />
                 <button id="submit">Submit</button> 
             </p>
+        </div>
 
+        <! -- Feedback (Initially Hidden) -- >   
     <div id="feedback" class="feedback hide"></div>
     </div>
     
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
