@@ -68,7 +68,7 @@ const feedbackEl = document.getElementById('feedback');
 
 // sound effects
 const sfxRight = new Audio("/sfx/correct.wav");
-const sfxWrong = new Audio("/sfx/incorrect.wav");
+const sfxWrong = new Audio("/sfx/wrong.wav");
 
 
 // Add event listeners
